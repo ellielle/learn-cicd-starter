@@ -9,10 +9,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/bootdotdev/learn-cicd-starter/internal/database"
 	"github.com/google/uuid"
+
+	"github.com/bootdotdev/learn-cicd-starter/internal/database"
 )
 
+// Make a change
 func (cfg *apiConfig) handlerUsersCreate(w http.ResponseWriter, r *http.Request) {
 	type parameters struct {
 		Name string `json:"name"`
