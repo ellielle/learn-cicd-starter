@@ -1,17 +1,17 @@
-name: ci
+name: CI
 
 on:
   pull_request:
     branches: [main]
 
 jobs:
-  tests:
+  test:
     name: Tests
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out code
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
 
       - name: Set up Go
         uses: actions/setup-go@v4
